@@ -157,9 +157,6 @@ section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul 
   section div.container div.index div.index-rt div.rt-new:last-child {
     margin-bottom: 0;
   }
-  section div.container div.index div.index-rt div.rt-new div.rt-new-top > div {
-    width: 195px;
-  }
   section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li {
     padding: 2px 8px;
   }
