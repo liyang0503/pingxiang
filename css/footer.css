@@ -26,6 +26,9 @@ footer div.foot-top div.container div.fot-ul div ul::-webkit-scrollbar-thumb {
   background-color: #008aff;
   border-radius: 2px;
 }
+footer div.foot-top div.container div.fot-ul div ul li a {
+  white-space: nowrap;
+}
 footer div.foot-top div.container div.fot-ul div ul li a i {
   display: inline-block;
   width: 5px;
@@ -66,6 +69,9 @@ footer div.foot div.container ul li:last-child {
 }
 footer div.foot div.container p {
   line-height: 110%;
+}
+footer div.foot.foot2 {
+  border-top: 4px solid #0056b7;
 }
 @media screen and (max-width: 767px) {
   footer div.foot-top {

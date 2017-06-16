@@ -93,9 +93,17 @@ footer {
 }
 header div.head-pc {
   height: 256px;
-  background-image: url("../images/pxiang-head_bj.jpg");
+  background-image: url("../images/pxiang-head_bj.png");
   background-repeat: no-repeat;
   position: relative;
+}
+header div.head-pc div.banner {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: -1;
 }
 header div.head-pc a.logo {
   position: absolute;
@@ -173,30 +181,33 @@ header div.head-pc div.search div.search-box button {
 header div.head-pc div.search div.search-box button span {
   font-size: 16px;
 }
+header div.head2 {
+  padding: 10px 0;
+}
 @media screen and (min-width: 768px) and (max-width: 999px) {
-  header div.container {
+  header div.head-pc {
     height: 184px;
-    background-size: 100%;
+    background-size: 32%;
   }
-  header div.container a.logo {
+  header div.head-pc a.logo {
     top: 45px;
     left: 50px;
   }
-  header div.container a.logo img {
+  header div.head-pc a.logo img {
     width: 120px;
   }
-  header div.container div.search {
+  header div.head-pc div.search {
     top: 50px;
     right: 30px;
     width: 420px;
   }
-  header div.container div.search ul.list1 {
+  header div.head-pc div.search ul.list1 {
     padding-left: 10px;
   }
-  header div.container div.search ul.list1 li {
+  header div.head-pc div.search ul.list1 li {
     padding: 3px 0;
   }
-  header div.container div.search div.search-box input {
+  header div.head-pc div.search div.search-box input {
     width: 320px;
   }
   nav div.container ul {

@@ -1,0 +1,58 @@
+section div.container div.news div.info-top {
+  height: 40px;
+  line-height: 40px;
+  background: #f2f8ff;
+  padding: 0 15px;
+}
+section div.container div.news div.info-top span {
+  color: #0056b7;
+  font-weight: bold;
+}
+section div.container div.news div.info-top a {
+  color: #c8ccd0;
+}
+section div.container div.news div.info-top a:hover {
+  color: #0056b7;
+}
+section div.container div.news div.news-sec {
+  padding: 15px 0;
+}
+section div.container div.news div.news-sec div.news-le {
+  color: #333;
+}
+section div.container div.news div.news-sec div.news-le div.news-top {
+  margin-bottom: 15px;
+}
+section div.container div.news div.news-sec div.news-le div.news-top p.title {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+section div.container div.news div.news-sec div.news-le div.news-top p.p2 {
+  text-align: right;
+  color: #333;
+}
+section div.container div.news div.news-sec div.news-le div.news-s img {
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;
+}
+section div.container div.news div.news-sec div.news-le a.ac {
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin: 25px auto 15px;
+  color: #e4393c;
+}
+section div.container div.news div.news-sec div.news-rt {
+  padding-left: 45px;
+}
+section div.container div.news div.news-sec div.news-rt p.tit {
+  font-size: 22px;
+  border-bottom: 1px solid #e4393c;
+}
+section div.container div.news div.news-sec div.news-rt ul.news-ul {
+  list-style: decimal;
+  list-style-position: inside;
+}

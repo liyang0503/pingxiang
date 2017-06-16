@@ -9,7 +9,7 @@ $(function () {
       $('nav li').each(function () {
          sum += $(this).outerWidth();
       });
-      $('nav ul').css({width: sum + "px"});
+      $('nav ul').css({width: (sum + 2) + "px"});
    }
 //   手机搜索
    $('.a-xy').click(function () {

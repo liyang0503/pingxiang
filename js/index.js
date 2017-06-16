@@ -4,6 +4,16 @@
  */
 
 $(function () {
+//   首页轮播
+   $('.banner').backstretch([
+      "images/pxiang-banner-1.png",
+      "images/pxiang-banner-2.png",
+      "images/pxiang-banner.jpg"
+   ], {
+      fade: 900,
+      duration: 4000
+   });
+
 //   tab切换调用
    tab('.rt-li', '.rt-ul');
    tab('.rt-li2', '.rt-ul2');

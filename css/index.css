@@ -13,6 +13,52 @@ section div.container div.index ul.new-list li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  position: relative;
+  padding-right: 85px;
+}
+section div.container div.index ul.new-list li a span {
+  font-size: 12px;
+  color: #999;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section div.container div.index ul.new-list li a span.s1 {
+  position: relative;
+  color: #333;
+  font-size: 14px;
+  padding-right: 3px;
+}
+section div.container div.index ul.new-list li a span.s2 {
+  background: #ff7c86;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  font-style: italic;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-right: 5px;
+  font-weight: bold;
+}
+section div.container div.index ul.new-list li a span.s2.top {
+  background: #e60012;
+}
+section div.container div.index ul.new-list2 li {
+  line-height: 30px;
+}
+section div.container div.index ul.new-list2 li a {
+  display: block;
+}
+section div.container div.index ul.new-list2 li a span {
+  max-width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 section div.container div.index div.index-le > div.row {
   margin-bottom: 20px;
@@ -22,11 +68,12 @@ section div.container div.index div.index-le > div.row div.new {
 }
 section div.container div.index div.index-le > div.row div.new div.new-top {
   margin-bottom: 5px;
+  line-height: 36px;
 }
 section div.container div.index div.index-le > div.row div.new div.new-top > span {
   font-weight: bold;
-  font-size: 16px;
-  color: #11385a;
+  font-size: 20px;
+  color: #0056b7;
 }
 section div.container div.index div.index-le > div.row div.new div.new-top ul {
   float: left;
@@ -47,8 +94,11 @@ section div.container div.index div.index-le > div.row div.new div.new-top ul li
   border-radius: 50%;
   margin: 3px 6px;
 }
+section div.container div.index div.index-le > div.row div.new div.new-top div {
+  margin-top: 4px;
+}
 section div.container div.index div.index-le > div.row div.new div.new-top div s {
-  width: 100px;
+  width: 85px;
   border-bottom: 1px solid #eee;
   margin-top: 14px;
 }
@@ -71,6 +121,7 @@ section div.container div.index div.index-le > div.row div.new div.new-sec div.m
   font-size: 12px;
 }
 section div.container div.index div.index-le > div.row div.new div.new-sec a.gd-list {
+  line-height: 120%;
   float: right;
   margin-top: -25px;
 }
@@ -133,6 +184,9 @@ section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul 
     padding: 15px 0;
   }
   section div.container div.index ul.new-list li {
+    line-height: 25px;
+  }
+  section div.container div.index ul.new-list2 li {
     line-height: 25px;
   }
   section div.container div.index div.index-le > div.row {
