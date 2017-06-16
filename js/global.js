@@ -11,6 +11,7 @@ $(function () {
       });
       $('nav ul').css({width: (sum + 2) + "px"});
    }
+
 //   手机搜索
    $('.a-xy').click(function () {
       $('.sj-list').slideToggle('fast');
@@ -19,6 +20,10 @@ $(function () {
       var txt = $(this).text();
       $('.a-xy').find('span.s1').text(txt);
       $(this).parent().slideUp('fast');
+   });
+
+   $('a').click(function () {
+      msg();
    });
 });
 
@@ -44,4 +49,8 @@ function tab(cli, sec) {
          $($(sec)[index]).addClass('active');
       });
    });
+}
+
+function msg() {
+   layer.msg('功能正在开发中');
 }
