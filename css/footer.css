@@ -1,0 +1,87 @@
+footer div.foot-top {
+  padding: 10px 0 20px;
+  background: #f7f7f7;
+}
+footer div.foot-top div.container div.fot-ul div {
+  text-align: center;
+}
+footer div.foot-top div.container div.fot-ul div p {
+  font-size: 18px;
+  color: #0056b7;
+  font-weight: bold;
+}
+footer div.foot-top div.container div.fot-ul div ul {
+  display: inline-block;
+  text-align: left;
+  height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+footer div.foot-top div.container div.fot-ul div ul::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background-color: #ddd;
+}
+footer div.foot-top div.container div.fot-ul div ul::-webkit-scrollbar-thumb {
+  background-color: #00ceff;
+  border-radius: 2px;
+}
+footer div.foot-top div.container div.fot-ul div ul li a i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #0056b7;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  top: -2px;
+}
+footer div.foot-top div.container div.fot-img div a {
+  display: block;
+  padding: 10px;
+}
+footer div.foot-top div.container div.fot-img div a img {
+  max-width: 100%;
+  margin: auto;
+}
+footer div.foot div.container {
+  text-align: center;
+  padding: 15px 0;
+  color: #767676;
+}
+footer div.foot div.container ul {
+  display: inline-block;
+}
+footer div.foot div.container ul li {
+  border-right: 1px solid #767676;
+}
+footer div.foot div.container ul li a {
+  display: block;
+  padding: 0 10px;
+  line-height: 100%;
+  color: #767676;
+}
+footer div.foot div.container ul li:last-child {
+  border: none;
+}
+footer div.foot div.container p {
+  line-height: 110%;
+}
+@media screen and (max-width: 767px) {
+  footer div.foot-top {
+    padding: 5px 0;
+  }
+  footer div.foot-top div.container div.fot-img div a {
+    padding: 5px 10px;
+  }
+  footer div.foot div.container {
+    padding: 10px 0;
+  }
+  footer div.foot div.container ul li a {
+    padding: 0 3px;
+    font-size: 10px;
+  }
+  footer div.foot div.container p {
+    line-height: 110%;
+  }
+}

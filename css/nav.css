@@ -1,0 +1,334 @@
+*,
+p,
+ul {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font: 14px/1.8 "微软雅黑";
+  color: #000;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font: 1.2rem/1.6 "微软雅黑";
+  }
+}
+body::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background-color: #ddd;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #008aff;
+  border-radius: 2px;
+}
+:focus {
+  outline: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #0056b7;
+}
+table {
+  border-spacing: 0;
+}
+label {
+  font-weight: normal;
+  margin: 0;
+}
+header,
+nav,
+section,
+footer {
+  display: block;
+  width: 100%;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+  nav div.container ul {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 50px;
+    background: #0056b7;
+  }
+  nav div.container ul li a {
+    padding: 0 17px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+  nav div.container ul li.active {
+    background: #fff;
+  }
+  nav div.container ul li.active a {
+    color: #0056b7;
+  }
+  nav div.container ul li:hover {
+    background: #009bff;
+  }
+}
+header div.head-pc {
+  height: 256px;
+  background-image: url("../images/pxiang-head_bj.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+header div.head-pc a.logo {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+header div.head-pc ul.h_top {
+  float: right;
+}
+header div.head-pc ul.h_top li {
+  margin: 5px 10px;
+}
+header div.head-pc ul.h_top li a {
+  font-size: 12px;
+}
+header div.head-pc div.search {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  width: 540px;
+}
+header div.head-pc div.search ul li a {
+  font-size: 12px;
+}
+header div.head-pc div.search ul.list1 {
+  padding-left: 40px;
+}
+header div.head-pc div.search ul.list1 li {
+  padding: 3px 0;
+}
+header div.head-pc div.search ul.list1 li:hover a {
+  color: #0056b7;
+  font-weight: bold;
+}
+header div.head-pc div.search ul.list1 li i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0056b7;
+  margin: 2px 6px;
+}
+header div.head-pc div.search ul.list2 li {
+  padding: 0 8px;
+}
+header div.head-pc div.search ul.list2 li a {
+  color: #0056b7;
+}
+header div.head-pc div.search div.search-box {
+  border: 2px solid #0056b7;
+  border-radius: 20px;
+  height: 35px;
+  background: #fff;
+  padding: 1px;
+}
+header div.head-pc div.search div.search-box > * {
+  height: 29px;
+  border: none;
+}
+header div.head-pc div.search div.search-box input {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 2px 12px;
+  width: 435px;
+}
+header div.head-pc div.search div.search-box button {
+  width: 90px;
+  background: #0056b7;
+  float: right;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+header div.head-pc div.search div.search-box button span {
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  header div.container {
+    height: 184px;
+    background-size: 100%;
+  }
+  header div.container a.logo {
+    top: 45px;
+    left: 50px;
+  }
+  header div.container a.logo img {
+    width: 120px;
+  }
+  header div.container div.search {
+    top: 50px;
+    right: 30px;
+    width: 420px;
+  }
+  header div.container div.search ul.list1 {
+    padding-left: 10px;
+  }
+  header div.container div.search ul.list1 li {
+    padding: 3px 0;
+  }
+  header div.container div.search div.search-box input {
+    width: 320px;
+  }
+  nav div.container ul {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    background: #0056b7;
+  }
+  nav div.container ul li a {
+    padding: 0 10px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+  nav div.container ul li.active {
+    background: #fff;
+  }
+  nav div.container ul li.active a {
+    color: #0056b7;
+  }
+  nav div.container ul li:hover {
+    background: #009bff;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    padding: 10px 0;
+  }
+  nav {
+    background: #eee;
+  }
+  nav div.container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  nav div.container ul {
+    height: 35px;
+    line-height: 35px;
+  }
+  nav div.container ul li a {
+    padding: 0 12px;
+    display: block;
+    text-align: center;
+    color: #0056b7;
+    font-weight: bold;
+  }
+  nav div.container ul li.active {
+    background: #0056b7;
+  }
+  nav div.container ul li.active a {
+    color: #fff;
+  }
+  div.search {
+    height: 165px;
+    background-image: url("../images/pxiang-head_bj.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 35px 10px 0;
+  }
+  div.search ul {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #bbb;
+    width: 200px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 3px 10px;
+  }
+  div.search ul li a {
+    font-size: 12px;
+  }
+  div.search div.search-box {
+    border: 2px solid #0056b7;
+    border-radius: 20px;
+    height: 35px;
+    background: #fff;
+    padding: 1px;
+  }
+  div.search div.search-box > * {
+    height: 29px;
+    border: none;
+  }
+  div.search div.search-box a {
+    padding: 5px 0;
+  }
+  div.search div.search-box a span.s1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    width: 48px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+  }
+  div.search div.search-box a span.s2 {
+    color: #0056b7;
+  }
+  div.search div.search-box input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2px 12px;
+    width: 58%;
+  }
+  div.search div.search-box button {
+    width: 75px;
+    background: #0056b7;
+    float: right;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+  div.search div.search-box button span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 410px) {
+  div.search div.search-box input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2px 12px;
+    width: 52%;
+  }
+}
+@media screen and (max-width: 350px) {
+  div.search div.search-box input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2px 12px;
+    width: 47%;
+  }
+}

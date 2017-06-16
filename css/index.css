@@ -1,0 +1,166 @@
+section div.container div.index {
+  padding: 20px 0;
+}
+section div.container div.index a.gd {
+  color: #999;
+  line-height: 28px;
+}
+section div.container div.index ul.new-list li {
+  line-height: 30px;
+}
+section div.container div.index ul.new-list li a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+section div.container div.index div.index-le > div.row {
+  margin-bottom: 20px;
+}
+section div.container div.index div.index-le > div.row div.new {
+  padding-right: 15px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top {
+  margin-bottom: 5px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top > span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #11385a;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top ul {
+  float: left;
+  margin-left: 10px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top ul li a {
+  font-size: 16px;
+  color: #666;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top ul li a:hover {
+  color: #0056b7;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top ul li i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #11385a;
+  border-radius: 50%;
+  margin: 3px 6px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top div s {
+  width: 100px;
+  border-bottom: 1px solid #eee;
+  margin-top: 14px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top div i {
+  width: 7px;
+  height: 7px;
+  background: #eee;
+  border-radius: 50%;
+  margin-top: 11px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-top div a {
+  margin-left: 5px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-sec div.media {
+  margin: 10px 0 5px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-sec div.media div.media-body p {
+  text-align: right;
+  color: #999;
+  font-size: 12px;
+}
+section div.container div.index div.index-le > div.row div.new div.new-sec a.gd-list {
+  float: right;
+  margin-top: -25px;
+}
+section div.container div.index div.index-le div.gg {
+  margin-bottom: 20px;
+}
+section div.container div.index div.index-le div.gg img {
+  max-width: 100%;
+}
+section div.container div.index div.index-rt {
+  padding-left: 3px;
+}
+section div.container div.index div.index-rt div.sg {
+  margin-bottom: 15px;
+}
+section div.container div.index div.index-rt div.sg a {
+  display: block;
+}
+section div.container div.index div.index-rt div.sg a img {
+  width: 100%;
+}
+section div.container div.index div.index-rt div.rt-new {
+  margin-bottom: 20px;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top {
+  margin-bottom: 10px;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > span {
+  font-size: 16px;
+  color: #fff;
+  background: #59aae0;
+  padding: 2px 8px;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > span.s2 {
+  background: #e84b42;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > div {
+  width: 205px;
+  border-top: 4px solid #59aae0;
+  margin-left: 8px;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > div.d2 {
+  border-color: #e84b42;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li {
+  padding: 1px 8px;
+  cursor: pointer;
+  color: #666;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li.active,
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li:hover {
+  color: #59aae0;
+}
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li.rt-li2.active,
+section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li.rt-li2:hover {
+  color: #e84b42;
+}
+@media screen and (max-width: 767px) {
+  section div.container div.index {
+    padding: 15px 0;
+  }
+  section div.container div.index ul.new-list li {
+    line-height: 25px;
+  }
+  section div.container div.index div.index-le > div.row {
+    margin-bottom: 0;
+  }
+  section div.container div.index div.index-le > div.row div.new {
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
+  section div.container div.index div.index-le > div.row div.new div.new-sec div.media div.media-left {
+    width: 36%;
+  }
+  section div.container div.index div.index-le > div.row div.new div.new-sec div.media div.media-left.zs {
+    width: 25%;
+  }
+  section div.container div.index div.index-le > div.row div.new div.new-sec div.media div.media-left img {
+    width: 100%;
+  }
+  section div.container div.index div.index-rt {
+    padding-left: 0;
+  }
+  section div.container div.index div.index-rt div.rt-new:last-child {
+    margin-bottom: 0;
+  }
+  section div.container div.index div.index-rt div.rt-new div.rt-new-top > div {
+    width: 195px;
+  }
+  section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li {
+    padding: 2px 8px;
+  }
+}
