@@ -13,23 +13,25 @@ section div.container div.index ul.new-list li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+section div.container div.index ul.new-list.time li a {
   position: relative;
   padding-right: 85px;
 }
-section div.container div.index ul.new-list li a span {
+section div.container div.index ul.new-list.time li a span {
   font-size: 12px;
   color: #999;
   position: absolute;
   right: 0;
   top: 0;
 }
-section div.container div.index ul.new-list li a span.s1 {
+section div.container div.index ul.new-list.time li a span.s1 {
   position: relative;
   color: #333;
   font-size: 14px;
   padding-right: 3px;
 }
-section div.container div.index ul.new-list li a span.s2 {
+section div.container div.index ul.new-list.time li a span.s2 {
   background: #ff7c86;
   border-radius: 50%;
   color: #fff;
@@ -43,8 +45,14 @@ section div.container div.index ul.new-list li a span.s2 {
   margin-right: 5px;
   font-weight: bold;
 }
-section div.container div.index ul.new-list li a span.s2.top {
+section div.container div.index ul.new-list.time li a span.s2.top {
   background: #e60012;
+}
+section div.container div.index ul.new-list.time li a img.img2 {
+  position: absolute;
+  right: 0;
+  top: 3px;
+  width: 18px;
 }
 section div.container div.index ul.new-list2 li {
   line-height: 30px;
