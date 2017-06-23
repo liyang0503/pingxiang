@@ -12,11 +12,11 @@ html {
 body {
   font: 14px/1.8 "微软雅黑";
   color: #000;
-  height: 100%;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   body {
-    font: 1.2rem/1.6 "微软雅黑";
+    font: 1.4rem/1.6 "微软雅黑";
   }
 }
 body::-webkit-scrollbar {
@@ -64,6 +64,34 @@ footer {
 .fr {
   float: right;
 }
+div.page {
+  margin-bottom: 0;
+  margin-top: 25px;
+  text-align: center;
+  height: 35px;
+}
+div.page .pagination > li > a,
+div.page .pagination > li > span {
+  border-color: #0056b7;
+  color: #0056b7;
+}
+div.page .pagination > li > a:focus,
+div.page .pagination > li > a:hover,
+div.page .pagination > li > span:focus,
+div.page .pagination > li > span:hover {
+  background-color: #0056b7;
+  border-color: #0056b7;
+  color: #fff;
+}
+div.page .pagination > .active > a,
+div.page .pagination > .active > a:focus,
+div.page .pagination > .active > a:hover,
+div.page .pagination > .active > span,
+div.page .pagination > .active > span:focus,
+div.page .pagination > .active > span:hover {
+  background-color: #0056b7;
+  color: #fff;
+}
 @media screen and (min-width: 1000px) {
   .container {
     width: 1000px;
@@ -71,7 +99,7 @@ footer {
   nav div.container ul {
     height: 45px;
     line-height: 45px;
-    padding: 0 50px;
+    padding: 0 5px;
     background: #0056b7;
   }
   nav div.container ul li a {
@@ -89,6 +117,9 @@ footer {
   }
   nav div.container ul li:hover {
     background: #009bff;
+  }
+  nav.nav-info {
+    background: #0056b7;
   }
 }
 header div.head-pc {
@@ -125,16 +156,17 @@ header div.head-pc div.search {
   right: 100px;
   width: 540px;
 }
-header div.head-pc div.search ul li a {
-  font-size: 12px;
-}
 header div.head-pc div.search ul.list1 {
-  padding-left: 40px;
+  text-align: center;
 }
 header div.head-pc div.search ul.list1 li {
+  display: inline-block;
+  vertical-align: middle;
   padding: 3px 0;
+  cursor: pointer;
 }
-header div.head-pc div.search ul.list1 li:hover a {
+header div.head-pc div.search ul.list1 li:hover,
+header div.head-pc div.search ul.list1 li.active {
   color: #0056b7;
   font-weight: bold;
 }
@@ -183,6 +215,65 @@ header div.head-pc div.search div.search-box button span {
 }
 header div.head2 {
   padding: 10px 0;
+  background-image: url("../images/pxiang-info-h-bj.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+header.head-info {
+  background: #edf3f7;
+}
+div.info-top {
+  height: 48px;
+  padding-top: 20px;
+}
+div.info-top .a1 {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  width: 102px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 30px;
+  font-size: 12px;
+  position: relative;
+}
+div.info-top a.a1 {
+  background-image: url("../images/pxiang-info-ico-02.png");
+  position: relative;
+}
+div.info-top span.a1 {
+  background-image: url("../images/pxiang-info-ico-03.png");
+  position: relative;
+}
+div.search-box {
+  float: right;
+  width: 255px;
+  height: 28px;
+  border: 1px solid #0056b7;
+  border-radius: 15px;
+}
+div.search-box.se2 {
+  width: auto;
+}
+div.search-box input,
+div.search-box button {
+  height: 26px;
+  border: none;
+}
+div.search-box button {
+  float: right;
+  width: 90px;
+  background: #0056b7;
+  color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+div.search-box input {
+  background: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 12px;
+  padding: 0 10px 0 12px;
 }
 @media screen and (min-width: 768px) and (max-width: 999px) {
   header div.head-pc {
@@ -236,6 +327,9 @@ header div.head2 {
 @media screen and (max-width: 767px) {
   header {
     padding: 10px 0;
+  }
+  header div.head2 {
+    padding: 0;
   }
   nav {
     background: #eee;
@@ -326,6 +420,58 @@ header div.head2 {
   div.search div.search-box button span {
     font-size: 16px;
   }
+  div.info-top {
+    margin-left: -4%;
+    margin-right: -4%;
+    background: #0056b7;
+    padding: 0 4%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    position: relative;
+  }
+  div.info-top span {
+    font-size: 1.4rem;
+  }
+  div.info-top span.s2 {
+    float: right;
+    width: 30px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+  }
+  div.info-top ul.ls {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 100%;
+    background: #fff;
+    z-index: 10;
+    border: 1px solid #0056b7;
+    border-radius: 5px;
+    line-height: 20px;
+    padding: 2px 0;
+  }
+  div.info-top ul.ls li a {
+    display: block;
+    padding: 5px 15px;
+  }
+  div.search-box {
+    float: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  div.search-box button {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  div.search-box input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 68%;
+  }
 }
 @media screen and (max-width: 410px) {
   div.search div.search-box input {
@@ -340,6 +486,6 @@ header div.head2 {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 2px 12px;
-    width: 47%;
+    width: 46%;
   }
 }

@@ -1,6 +1,8 @@
 footer div.foot-top {
   padding: 10px 0 20px;
-  background: #f7f7f7;
+  background-image: url("../images/pxiang-foot-bj1.png");
+  background-repeat: repeat;
+  background-color: #f7f7f7;
 }
 footer div.foot-top div.container div.fot-ul div {
   text-align: center;
@@ -71,7 +73,28 @@ footer div.foot div.container p {
   line-height: 110%;
 }
 footer div.foot.foot2 {
-  border-top: 4px solid #0056b7;
+  background: #0056b7;
+}
+footer div.foot.foot2 div.container {
+  color: #fff;
+  position: relative;
+}
+footer div.foot.foot2 div.container ul li {
+  border-right: 1px solid #fff;
+}
+footer div.foot.foot2 div.container ul li a {
+  color: #fff;
+}
+footer div.foot.foot2 div.container ul li:last-child {
+  border: none;
+}
+footer div.foot.foot2 div.container > img {
+  position: absolute;
+  top: -30px;
+  right: -120px;
+}
+footer div.foot.foot2 div.container p a {
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   footer div.foot-top {
@@ -83,11 +106,17 @@ footer div.foot.foot2 {
   footer div.foot div.container {
     padding: 10px 0;
   }
+  footer div.foot div.container > img {
+    display: none;
+  }
   footer div.foot div.container ul li a {
     padding: 0 3px;
     font-size: 10px;
   }
   footer div.foot div.container p {
     line-height: 110%;
+  }
+  footer div.foot div.container p a {
+    color: #fff;
   }
 }
