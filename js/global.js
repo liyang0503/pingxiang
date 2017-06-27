@@ -62,19 +62,6 @@ $(function () {
 
 //tab切换
 function tab(cli, sec) {
-   /*function se() {
-      $(sec).each(function () {
-         $(this).hide();
-         if ($(this).hasClass('active')) {
-            $(this).show();
-         }
-      });
-      setTimeout(se);
-
-   }
-
-   se();*/
-
    $(cli).each(function (index) {
       $(this).click(function () {
          $(sec).removeClass('active');
