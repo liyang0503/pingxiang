@@ -213,6 +213,12 @@ header div.head-pc div.search div.search-box button {
 header div.head-pc div.search div.search-box button span {
   font-size: 16px;
 }
+header div.head-pc div.search .list1-sec {
+  display: none;
+}
+header div.head-pc div.search .list1-sec.active {
+  display: block;
+}
 header div.head2 {
   padding: 10px 0;
   background-image: url("../images/pxiang-info-h-bj.png");

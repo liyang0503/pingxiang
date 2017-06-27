@@ -47,8 +47,10 @@ $(function () {
       $(this).parent().slideUp('fast');
    });
 
-   $('a').not('.a-xy').click(function () {
-      msg();
+   $('a').click(function () {
+      if ($(this).attr('href') == 'javascript:') {
+         msg();
+      }
    });
 
 //  手机二级导航
@@ -60,7 +62,7 @@ $(function () {
 
 //tab切换
 function tab(cli, sec) {
-   function se() {
+   /*function se() {
       $(sec).each(function () {
          $(this).hide();
          if ($(this).hasClass('active')) {
@@ -71,7 +73,7 @@ function tab(cli, sec) {
 
    }
 
-   se();
+   se();*/
 
    $(cli).each(function (index) {
       $(this).click(function () {

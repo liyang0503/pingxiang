@@ -218,6 +218,12 @@ section div.container div.public div.public-list div.row div.pub-rt div.record u
   color: #0056b7;
   font-weight: bold;
 }
+section div.container div.public div.public-list div.row div.pub-rt div.record div.rec-sec {
+  display: none;
+}
+section div.container div.public div.public-list div.row div.pub-rt div.record div.rec-sec.active {
+  display: block;
+}
 section div.container div.public div.public-list div.row div.pub-rt div.record div.book {
   padding-top: 10px;
 }

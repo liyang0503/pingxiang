@@ -22,6 +22,18 @@ section div.container div.index ul.new-list li a i.ii {
   background: #0056b7;
   border-radius: 50%;
 }
+section div.container div.index ul.new-list.rt-ul {
+  display: none;
+}
+section div.container div.index ul.new-list.rt-ul.active {
+  display: block;
+}
+section div.container div.index ul.new-list.rt-ul2 {
+  display: none;
+}
+section div.container div.index ul.new-list.rt-ul2.active {
+  display: block;
+}
 section div.container div.index ul.time li a {
   position: relative;
   padding-right: 76px;
@@ -71,7 +83,7 @@ section div.container div.index ul.new-list2 li a {
 section div.container div.index ul.new-list2 li a p {
   max-width: 90%;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
