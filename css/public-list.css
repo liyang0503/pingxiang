@@ -228,13 +228,13 @@ section div.container div.public div.public-list div.row div.pub-rt div.record d
   padding-top: 10px;
 }
 section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul {
-  background-image: url("../images/pxiang-shu-bj.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding: 10px 20px 24px;
+  background-repeat: no-repeat !important;
+  padding: 0 20px;
+  margin-top: 10px;
 }
 section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul li {
   width: 20%;
+  padding-bottom: 24px;
 }
 section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul li a {
   display: block;
@@ -333,7 +333,7 @@ section div.container div.public div.public-list div.row div.pub-rt div.record d
     margin-right: -4%;
   }
   section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul {
-    padding: 10px 5px 24px;
+    padding: 0 5px;
   }
   section div.container div.public div.public-list div.row div.pub-rt div.record div.book ul li {
     width: 33%;

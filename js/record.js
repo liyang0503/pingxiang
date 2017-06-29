@@ -9,4 +9,23 @@ $(function () {
    });
 
    tab('.rec-li', '.rec-sec');
+
+   book();
 });
+
+// 按部门展示
+function book() {
+   $('.uls').each(function () {
+      var ul = $(this).outerHeight(),
+         li = $(this).children('li').outerHeight(),
+         num = ul / li,
+         ur = 'url("' + $(this).prev(".shu").attr('src') + '")',
+         urls = [];
+      for (var i = 0; i < num; i++) {
+         urls.push(ur + " center " + (li * (i + 1) - 38) + "px");
+      }
+      $(this).css({
+         background: urls
+      });
+   });
+}
