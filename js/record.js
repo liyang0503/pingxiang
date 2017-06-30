@@ -8,8 +8,6 @@ $(function () {
       $(this).css({marginTop: st + "px", marginLeft: sl + "px"});
    });
 
-   tab('.rec-li', '.rec-sec');
-
    book();
 });
 

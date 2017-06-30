@@ -209,6 +209,20 @@ section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul 
 section div.container div.index div.index-rt div.rt-new div.rt-new-top > div ul li.rt-li2:hover {
   color: #e84b42;
 }
+@media screen and (min-width: 1000px) {
+  ul.new-1 {
+    height: 210px;
+  }
+  ul.new-2 {
+    height: 180px;
+  }
+  ul.new-3 {
+    height: 150px;
+  }
+  ul.new-4 {
+    height: 300px;
+  }
+}
 @media screen and (max-width: 767px) {
   section div.container div.index {
     padding: 15px 0;

@@ -4,14 +4,31 @@
  */
 
 $(function () {
-//   首页轮播
+//   手机首页轮播
    $('.banner').backstretch([
+      "images/pxiang-banner.jpg",
       "images/pxiang-banner-1.png",
-      "images/pxiang-banner-2.png",
-      "images/pxiang-banner.jpg"
+      "images/pxiang-banner-2.png"
    ], {
       fade: 900,
       duration: 4000
+   });
+
+//   PC首页轮播
+   $(".le_se").slide({
+      titCell: "",
+      mainCell: ".bd ul",
+      autoPage: true,
+      effect: "left",
+      autoPlay: true,
+      scroll: 1,
+      vis: 2,
+      trigger: "click"
+   });
+   $('.ban-text').hover(function () {
+      $(this).children('.text').css({bottom: 0, opacity: 1});
+   }, function () {
+      $(this).children('.text').css({bottom: "-100%", opacity: 0});
    });
 
 //   tab切换调用
@@ -26,9 +43,8 @@ $(function () {
          $(rt_top).find('div').css({width: $(rt_top).outerWidth() - $(rt_top).find('span').outerWidth() - 8});
       });
    }
-
-   $('.list1-li').click(function () {
-      var url = $(this).attr('data-url');
-      $('#search').attr('action', url);
-   });
 });
+
+jQuery.fn.size = function () {
+   return this.length;
+};

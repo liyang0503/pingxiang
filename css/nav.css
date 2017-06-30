@@ -96,11 +96,13 @@ div.page .pagination > .active > span:hover {
   .container {
     width: 1000px;
   }
+  nav {
+    background: #0056b7;
+  }
   nav div.container ul {
     height: 45px;
     line-height: 45px;
     padding: 0 5px;
-    background: #0056b7;
   }
   nav div.container ul li a {
     padding: 0 17px;
@@ -123,23 +125,7 @@ div.page .pagination > .active > span:hover {
   }
 }
 header div.head-pc {
-  height: 256px;
-  background-image: url("../images/pxiang-head_bj.png");
-  background-repeat: no-repeat;
-  position: relative;
-}
-header div.head-pc div.banner {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0;
-  z-index: -1;
-}
-header div.head-pc a.logo {
-  position: absolute;
-  top: 70px;
-  left: 70px;
+  padding: 10px 0;
 }
 header div.head-pc ul.h_top {
   float: right;
@@ -150,75 +136,6 @@ header div.head-pc ul.h_top li {
 header div.head-pc ul.h_top li a {
   font-size: 12px;
 }
-header div.head-pc div.search {
-  position: absolute;
-  top: 80px;
-  right: 100px;
-  width: 540px;
-}
-header div.head-pc div.search ul.list1 {
-  text-align: center;
-}
-header div.head-pc div.search ul.list1 li {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 3px 0;
-  cursor: pointer;
-}
-header div.head-pc div.search ul.list1 li:hover,
-header div.head-pc div.search ul.list1 li.active {
-  color: #0056b7;
-  font-weight: bold;
-}
-header div.head-pc div.search ul.list1 li i {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #0056b7;
-  margin: 2px 6px;
-}
-header div.head-pc div.search ul.list2 li {
-  padding: 0 8px;
-}
-header div.head-pc div.search ul.list2 li a {
-  color: #0056b7;
-}
-header div.head-pc div.search div.search-box {
-  border: 2px solid #0056b7;
-  border-radius: 20px;
-  height: 35px;
-  background: #fff;
-  padding: 1px;
-}
-header div.head-pc div.search div.search-box > * {
-  height: 29px;
-  border: none;
-}
-header div.head-pc div.search div.search-box input {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  padding: 2px 12px;
-  width: 435px;
-}
-header div.head-pc div.search div.search-box button {
-  width: 90px;
-  background: #0056b7;
-  float: right;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  color: #fff;
-  font-size: 14px;
-}
-header div.head-pc div.search div.search-box button span {
-  font-size: 16px;
-}
-header div.head-pc div.search .list1-sec {
-  display: none;
-}
-header div.head-pc div.search .list1-sec.active {
-  display: block;
-}
 header div.head2 {
   padding: 10px 0;
   background-image: url("../images/pxiang-info-h-bj.png");
@@ -227,6 +144,159 @@ header div.head2 {
 }
 header.head-info {
   background: #edf3f7;
+}
+div.banners {
+  height: 407px;
+  position: relative;
+}
+div.banners img.ban {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+div.banners div.container div.banner-top {
+  padding: 30px 15px;
+}
+div.banners div.container div.banner-top > img {
+  margin-top: 15px;
+}
+div.banners div.container div.banner-top div.search {
+  width: 560px;
+  float: right;
+}
+div.banners div.container div.banner-top div.search ul.list1 {
+  text-align: center;
+}
+div.banners div.container div.banner-top div.search ul.list1 li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px 0;
+  cursor: pointer;
+}
+div.banners div.container div.banner-top div.search ul.list1 li:hover,
+div.banners div.container div.banner-top div.search ul.list1 li.active {
+  color: #0056b7;
+  font-weight: bold;
+}
+div.banners div.container div.banner-top div.search ul.list1 li i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0056b7;
+  margin: 2px 6px;
+}
+div.banners div.container div.banner-top div.search ul.list2 li {
+  padding: 0 8px;
+}
+div.banners div.container div.banner-top div.search ul.list2 li a {
+  color: #0056b7;
+}
+div.banners div.container div.banner-top div.search div.search-in-box {
+  border: 2px solid #0056b7;
+  border-radius: 20px;
+  height: 35px;
+  background: #fff;
+  padding: 1px;
+}
+div.banners div.container div.banner-top div.search div.search-in-box > * {
+  height: 29px;
+  border: none;
+}
+div.banners div.container div.banner-top div.search div.search-in-box input {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 2px 12px;
+  width: 435px;
+}
+div.banners div.container div.banner-top div.search div.search-in-box button {
+  width: 90px;
+  background: #0056b7;
+  float: right;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+div.banners div.container div.banner-top div.search div.search-in-box button span {
+  font-size: 16px;
+}
+div.banners div.container div.banner-top div.search .list1-sec {
+  display: none;
+}
+div.banners div.container div.banner-top div.search .list1-sec.active {
+  display: block;
+}
+div.banners div.container div.le_se {
+  margin: 5px auto;
+  position: relative;
+}
+div.banners div.container div.le_se > div.bd {
+  width: 100%;
+}
+div.banners div.container div.le_se > div.bd ul {
+  width: 100%;
+}
+div.banners div.container div.le_se > div.bd ul li {
+  display: inline-block;
+  width: 50%;
+}
+div.banners div.container div.le_se > div.bd ul li div.s {
+  width: 96%;
+  margin: auto;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.6);
+}
+div.banners div.container div.le_se > div.bd ul li div.s a {
+  display: block;
+  position: relative;
+}
+div.banners div.container div.le_se > div.bd ul li div.s a img {
+  display: block;
+  width: 100%;
+}
+div.banners div.container div.le_se > div.bd ul li div.s a div.text {
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+  left: 0;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #333;
+}
+div.banners div.container div.le_se > div.bd ul li div.s a div.text p.t {
+  font-size: 18px;
+}
+div.banners div.container div.le_se > div.bd ul li div.s a div.text p.p1 {
+  font-size: 12px;
+}
+div.banners div.container div.le_se > a {
+  position: absolute;
+  top: 43%;
+  background: rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+div.banners div.container div.le_se > a.next {
+  left: -48px;
+}
+div.banners div.container div.le_se > a.prev {
+  right: -48px;
 }
 div.info-top {
   height: 48px;
