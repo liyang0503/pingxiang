@@ -5,14 +5,14 @@
 
 $(function () {
 //   手机首页轮播
-   $('.banner').backstretch([
+   /*$('.banner').backstretch([
       "images/pxiang-banner.jpg",
       "images/pxiang-banner-1.png",
       "images/pxiang-banner-2.png"
    ], {
       fade: 900,
       duration: 4000
-   });
+   });*/
 
 //   PC首页轮播
    $(".le_se").slide({
@@ -35,6 +35,7 @@ $(function () {
    tab('.rt-li', '.rt-ul');
    tab('.rt-li2', '.rt-ul2');
    tab('.list1-li', '.list1-sec');
+   tab('.list2-li', '.list2-sec');
 
 //   右侧切换部分的宽度（手机）
    if (w < 767) {

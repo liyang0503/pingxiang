@@ -306,7 +306,7 @@ section div.container div.public div.public-list div.row div.pub-rt div.record d
 section div.container div.public div.public-list div.row div.pub-rt div.record div.list table tbody tr td:last-child {
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 993px) {
   section {
     background: #fff;
   }

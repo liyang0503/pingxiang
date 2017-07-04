@@ -96,7 +96,7 @@ footer div.foot.foot2 div.container > img {
 footer div.foot.foot2 div.container p a {
   color: #fff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 993px) {
   footer div.foot-top {
     padding: 5px 0;
   }
@@ -111,10 +111,11 @@ footer div.foot.foot2 div.container p a {
   }
   footer div.foot div.container ul li a {
     padding: 0 3px;
-    font-size: 10px;
+    font-size: 1.2rem;
   }
   footer div.foot div.container p {
     line-height: 110%;
+    font-size: 1.2rem;
   }
   footer div.foot div.container p a {
     color: #fff;

@@ -8,13 +8,11 @@ $(function () {
       if ($('body').outerHeight() < wh) {
          $('body').css({paddingBottom: $('footer').outerHeight(), height: wh});
          $('section').css({minHeight: wh - $('footer').outerHeight() - $('header').outerHeight() - $('nav').outerHeight()});
-         if (w > 993) {
-            $('footer').css({
-               position: 'absolute',
-               left: 0,
-               bottom: 0
-            });
-         }
+         $('footer').css({
+            position: 'absolute',
+            left: 0,
+            bottom: 0
+         });
       }
       setTimeout(top, 0);
    }
@@ -29,12 +27,28 @@ $(function () {
    });
 
    //手机导航
-   if (w < 768) {
-      var sum = 0;
-      $('nav li').each(function () {
+   if (w < 993) {
+      var sum = 0, arr = [], sum1;
+      $('nav li').each(function (index) {
          sum += $(this).outerWidth();
+         arr.push(sum);
+         if ($(this).hasClass('active')) {
+            sum1 = arr[index] - 200;
+         }
       });
       $('nav ul').css({width: (sum + 2) + "px"});
+      if (sum1 >= 0 && sum1 <= (sum - w)) {
+         $('nav ul').css({left: -sum1 + 'px'});
+      } else if (sum1 < 0) {
+         $('nav ul').css({left: 0});
+      } else {
+         $('nav ul').css({left: -(sum - w) + 'px'});
+      }
+
+      $('nav ul').on("touchmove", function (e) {
+         e.stopPropagation();
+         $(this).css({left: 'auto'});
+      });
    }
 
 //   手机搜索
