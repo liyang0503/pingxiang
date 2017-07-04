@@ -6,13 +6,13 @@
 $(function () {
 //   手机首页轮播
    /*$('.banner').backstretch([
-      "images/pxiang-banner.jpg",
-      "images/pxiang-banner-1.png",
-      "images/pxiang-banner-2.png"
-   ], {
-      fade: 900,
-      duration: 4000
-   });*/
+    "images/pxiang-banner.jpg",
+    "images/pxiang-banner-1.png",
+    "images/pxiang-banner-2.png"
+    ], {
+    fade: 900,
+    duration: 4000
+    });*/
 
 //   PC首页轮播
    $(".le_se").slide({
@@ -44,8 +44,18 @@ $(function () {
          $(rt_top).find('div').css({width: $(rt_top).outerWidth() - $(rt_top).find('span').outerWidth() - 8});
       });
    }
+
+   ff();
 });
 
 jQuery.fn.size = function () {
    return this.length;
 };
+
+//判断浏览器是否为火狐
+function ff() {
+   var explorer = navigator.userAgent;
+   if (explorer.indexOf("Firefox") >= 0) {
+      $('.foot-ul').perfectScrollbar();
+   }
+}

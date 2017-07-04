@@ -321,6 +321,9 @@ section div.container div.public div.public-list div.row div.pub-rt div.record d
   section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-t {
     padding: 0;
   }
+  section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-t > img {
+    width: 80px;
+  }
   section div.container div.public div.public-list div.row div.pub-rt div.pub-rt-s {
     padding: 5px 0 10px;
   }

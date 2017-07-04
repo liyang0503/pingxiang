@@ -110,9 +110,6 @@ header div.head2 {
   background-repeat: no-repeat;
   background-position: right top;
 }
-header.head-info {
-  background: #edf3f7;
-}
 img.ban {
   position: absolute;
   top: 0;
@@ -339,7 +336,7 @@ div.search-box input {
   nav div.container ul {
     height: 45px;
     line-height: 45px;
-    padding: 0 5px;
+    padding: 0 4px;
   }
   nav div.container ul li a {
     padding: 0 17px;
@@ -364,6 +361,9 @@ div.search-box input {
 @media screen and (max-width: 993px) {
   header {
     padding: 10px 0;
+  }
+  header a.logo img {
+    width: 120px;
   }
   nav {
     background: #eee;
